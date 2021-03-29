@@ -1,0 +1,23 @@
+<div align='center'><h1>Bookstore CRUD with Angular</h1></div>
+
+<div>
+  <table class="table" style="width: 80%">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+    </tr>
+    <tr *ngFor="let book of bookList">
+      <td style="text-align: center;">
+        {{book.title}}
+      </td>
+      <td style="text-align: center;">
+        {{book.author}}
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>
+    <button (click)="addBook()"> Add Book</button>
+  </p>
+</div>
